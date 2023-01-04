@@ -105,11 +105,11 @@ const StyledTabButton = styled.button<StyledTabButtonProps>`
         padding: 0 15px 2px;
     }
     @media (max-width: 600px) {
-        min-width: 120px;
         padding: 0 15px;
-        border-left: 0;
-        border-bottom: 2px solid ${colors.GREEN};
+        border-left: 0 !important;
+        border-bottom: 2px solid ${({ isActive }) => (isActive ? colors.BLUE : colors.BLUE_DARK_80)};
         text-align: center;
+        width: auto;
     }
 
     &:hover,

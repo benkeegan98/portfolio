@@ -21,7 +21,22 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: ${BLACK};
-        color: ${WHITE}
+        color: ${WHITE};
+
+        &.blur {
+            overflow: hidden;
+
+            header {
+                background-color: transparent;
+            }
+
+            #content > * {
+                filter: blur(5px) brightness(0.7);
+                transition: var(--transition);
+                pointer-events: none;
+                user-select: none;
+            }
+        }
     }
     
     #root{

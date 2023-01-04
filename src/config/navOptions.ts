@@ -1,4 +1,9 @@
-const navOptions = [
+export interface NavOption {
+    name: string;
+    url: '/#about' | '/#skills' | '/#work' | '/#projects' | 'mailto:ben.keegan98@gmail.com';
+}
+
+const navOptions: NavOption[] = [
     {
       name: 'About',
       url: '/#about',

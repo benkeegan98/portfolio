@@ -11,23 +11,55 @@ const StyledLandingSection = styled.section`
     height: 100vh;
     padding: 0;
 
-    /* @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+    @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
         height: auto;
-    } */
+    }
 
-    /* h1 {
-        margin: 0 0 30px 4px;
+    @media (max-width: 768px) {
+        margin-top: 100px;
+        width: 100vw;
+    }
 
-        @media (max-width: 480px) {
-            margin: 0 0 20px 2px;
+    h1 {
+        font-size: 150px;
+        font-weight: 400;
+        color: ${BLUE};
+        font-family: Verdana, sans-serif;
+
+        @media (max-width: 768px) {
+            font-size: 80px;
+        }
+    }
+
+    h2 {
+        font-size: 70px;
+        font-weight: 400;
+        color: ${WHITE};
+        font-family: Verdana, sans-serif;
+        padding: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 50px;
         }
     }
 
     h3 {
         margin-top: 5px;
-        line-height: 0.9;
+        line-height: 1.2;
+
+        font-size: 20px;
+        font-weight: 200;
+        color: ${WHITE};
+        font-family: Verdana, sans-serif;
+        padding: 15px;
+        max-width: 700px;
+
+        @media (max-width: 768px) {
+            max-width: 400px;
+            font-size: 16px;
+        }
     }
-    */
+   
 
     p {
         font-family: Verdana, sans-serif;
@@ -37,21 +69,24 @@ const StyledLandingSection = styled.section`
 `
 
 const Landing = () => {
-    const one = <Text color={BLUE} size={150} paddingY={10}>Ben Keegan</Text>;
-    const two = (
-        <Container paddingX={10}>
-            <Text color={WHITE} size={70}>Software Engineer</Text>
-        </Container>
+    // const one = <Text color={BLUE} size={150} paddingY={10}>Ben Keegan</Text>;
+    const one = <h1>Ben Keegan</h1>;
+    const two = <h2>Software Engineer</h2>;
+    const three = (
+        <h3>
+            Full stack developer with over 2 years experience designing, 
+            building, and deploying applications for web and mobile
+        </h3>
     );
 
-    const three = (
-        <Container paddingX={10} paddingY={30} maxWidth="600px">
-            <Text>
-                Full stack developer with over 2 years experience designing, 
-                building, and deploying applications for web and mobile
-            </Text>
-        </Container>
-    );
+    // const three = (
+    //     <Container paddingX={10} paddingY={30} maxWidth="600px">
+    //         <Text>
+    //             Full stack developer with over 2 years experience designing, 
+    //             building, and deploying applications for web and mobile
+    //         </Text>
+    //     </Container>
+    // );
 
     const items = [one, two, three];
 

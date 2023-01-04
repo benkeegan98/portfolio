@@ -8,7 +8,7 @@ import { BLUE, BLUE_LIGHT_20, BLUE_LIGHT_80 } from "../../styles/colors";
 
 const StyledAboutSection = styled.section`
     max-width: 900px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     padding: 100px 0px;
 
@@ -23,6 +23,12 @@ const StyledAboutSection = styled.section`
         display: grid;
         grid-template-columns: 3fr 2fr;
         grid-gap: 50px;
+
+        span {
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
 
         a {
             color: ${BLUE};
@@ -45,8 +51,8 @@ const StyledPic = styled.div`
   max-width: 300px;
 
   @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
+    margin: 20px auto;
+    /* width: 70%; */
   }
 
   .wrapper {

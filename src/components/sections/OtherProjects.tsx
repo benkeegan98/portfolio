@@ -12,7 +12,7 @@ const StyledProjectsSection = styled.section`
     align-items: center;
 
     max-width: 900px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     padding: 100px 0px;
 
@@ -57,6 +57,10 @@ const StyledProjectsSection = styled.section`
 
         @media (max-width: 1080px) {
             grid-template-columns: repeat(3, minmax(250px, 1fr));
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, minmax(250px, 1fr));
         }
     }
 

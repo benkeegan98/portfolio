@@ -11,6 +11,7 @@ import Skills from '../components/sections/Skills';
 import Work from '../components/sections/Work';
 import FeaturedProjects from '../components/sections/FeaturedProjects';
 import OtherProjects from '../components/sections/OtherProjects';
+import Footer from '../components/sections/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -41,13 +42,14 @@ export default function Home() {
       <main id="main">
         <Nav />
         <Social />
-        <StyledMainContainer>
+        <StyledMainContainer id="content">
           <Landing />
           <About />
           <Skills />
           <Work />
           <FeaturedProjects />
           <OtherProjects />
+          <Footer />
         </StyledMainContainer>
       </main>
     </>

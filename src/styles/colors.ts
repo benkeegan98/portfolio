@@ -1,4 +1,4 @@
-import { lighten, rgba } from "./utils"
+import { darken, lighten, rgba } from "./utils"
 
 export const GREEN = "#1DB954";
 export const GREEN_DARK_20 = rgba(GREEN, 0.8);
@@ -28,7 +28,12 @@ export const BLUE_DARK_80 = rgba(BLUE, 0.2);
 export const BLUE_LIGHT_20 = lighten(BLUE, 0.5)
 export const BLUE_LIGHT_40 = lighten(BLUE, 0.8)
 export const BLUE_LIGHT_60 = lighten(BLUE, 1)
-export const BLUE_LIGHT_80 = lighten(BLUE, 1.5)
+export const BLUE_LIGHT_80 = lighten(BLUE, 1.5);
+
+export const NAVY = darken(BLUE);
+
+export const NAVY_2 = darken(BLUE, 0.5);
+export const NAVY_3 = darken(BLUE, 2.5);
 
 const colors = {
     GREEN,
@@ -55,6 +60,9 @@ const colors = {
     BLUE_LIGHT_40,
     BLUE_LIGHT_60,
     BLUE_LIGHT_80,
+    NAVY,
+    NAVY_2,
+    NAVY_3,
 }
 
 export default colors;

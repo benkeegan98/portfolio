@@ -9,7 +9,7 @@ import skillData from '../../config/skillData';
 
 const StyledSkillsSection = styled.section`
     max-width: 900px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     padding: 100px 0px;
 
@@ -24,7 +24,12 @@ const StyledSkillsSection = styled.section`
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
+
 `
 
 

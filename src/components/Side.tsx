@@ -15,14 +15,14 @@ const StyledSideElement = styled.div<SideProps>`
   right: ${props => (props.orientation === 'left' ? 'auto' : '40px')};
   z-index: 10;
 
-  /* @media (max-width: 1080px) {
+  @media (max-width: 1080px) {
     left: ${props => (props.orientation === 'left' ? '20px' : 'auto')};
     right: ${props => (props.orientation === 'left' ? 'auto' : '20px')};
   }
 
   @media (max-width: 768px) {
     display: none;
-  } */
+  }
 `;
 
 const Side = ({ children, orientation }: SideProps) => {
