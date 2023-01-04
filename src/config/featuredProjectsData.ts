@@ -73,6 +73,35 @@ const featuredProjectsData = [
                 type: "external",
                 url: "https://spotemy.vercel.app"
             },
+            {
+                type: "github",
+                url: "https://github.com/benkeegan98/Spotemy-Web"
+            },
+        ]
+    },
+    {
+        title: "Portfolio Site",
+        coverImage: {
+            url: "/portfolio-cover.png",
+            height: 340,
+            width: 550,
+        },
+        description: "Personal portfolio site with links to resume, work experience, and projects.",
+        tech: [
+            "Typescript",
+            "React",
+            "Next.js",
+            "Styled Components",
+        ],
+        externalLinks: [
+            {
+                type: "external",
+                url: "/"
+            },
+            {
+                type: "github",
+                url: "https://github.com/benkeegan98/portfolio"
+            },
         ]
     },
 ]

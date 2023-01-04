@@ -406,7 +406,7 @@ const FeaturedProjects = () => {
                       <p className="project-overline">Featured Project</p>
   
                       <h3 className="project-title">
-                        <a href={externalLinks.length ? externalLinks[0].url : undefined}>{title}</a>
+                        <a href={externalLinks.length ? externalLinks[0].url : undefined} target="_blank" rel="noopener noreferrer">{title}</a>
                       </h3>
   
                       <div className="project-description">
@@ -423,7 +423,7 @@ const FeaturedProjects = () => {
   
                       <div className="project-links">
                         {externalLinks.map(({ type, url }, i) => (
-                            <a key={i} href={url} aria-label="type" className="external">
+                            <a key={i} href={url} aria-label="type" target="_blank" rel="noopener noreferrer" className="external">
                                 <Icon name={type as IconName} />
                             </a>
                         ))}
@@ -432,7 +432,7 @@ const FeaturedProjects = () => {
                   </div>
   
                   <div className="project-image">
-                    <a href={externalLinks.length ? externalLinks[0].url : undefined}>
+                    <a href={externalLinks.length ? externalLinks[0].url : undefined} target="_blank" rel="noopener noreferrer">
                       <Image src={coverImage.url} height={coverImage.height} width={coverImage.width} alt={`${title} Cover Image`} className="img" />
                     </a>
                   </div>
