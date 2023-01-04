@@ -6,8 +6,7 @@ import { srConfig } from '../../utils/scrollReveal';
 import Icon, { IconName } from '../Icon';
 import Image from '../Image';
 
-const StyledProjectsGrid = styled.ul`
-    list-style: none;
+const StyledProjectsSection = styled.section`
     max-width: 900px;
     height: 100vh;
     margin: 0px auto;
@@ -19,6 +18,23 @@ const StyledProjectsGrid = styled.ul`
         color: ${BLUE};
         margin-bottom: 20px;
     }
+
+    .inner {
+        display: flex;
+
+        @media (max-width: 600px) {
+            display: block;
+        }
+
+        // Prevent container from jumping
+        @media (min-width: 700px) {
+            min-height: 340px;
+        }
+    }
+`
+
+const StyledProjectsGrid = styled.ul`
+    list-style: none;
 
     a {
         position: relative;
@@ -389,7 +405,7 @@ const FeaturedProjects = () => {
     }, []);
   
     return (
-      <section id="projects">
+      <StyledProjectsSection id="projects">
         {/* <h2> ref={revealTitle}> */}
         <h2>
           Some Projects I’ve Built
@@ -440,7 +456,7 @@ const FeaturedProjects = () => {
               );
             })}
         </StyledProjectsGrid>
-      </section>
+      </StyledProjectsSection>
     );
   };
   
