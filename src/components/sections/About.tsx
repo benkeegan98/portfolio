@@ -132,7 +132,7 @@ const About = () => {
   
           <StyledPic>
             <div className="wrapper">
-              <Image height={300} height={300} src={'/headshot2.jpeg'}/>
+              <Image height={300} width={300} src={'/headshot2.jpeg'} alt="headshot"/>
             </div>
           </StyledPic>
         </div>

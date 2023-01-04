@@ -433,7 +433,7 @@ const FeaturedProjects = () => {
   
                   <div className="project-image">
                     <a href={externalLinks.length ? externalLinks[0].url : undefined}>
-                      <Image src={coverImage.url} height={coverImage.height} width={coverImage.width} className="img" />
+                      <Image src={coverImage.url} height={coverImage.height} width={coverImage.width} alt={`${title} Cover Image`} className="img" />
                     </a>
                   </div>
                 </StyledProject>

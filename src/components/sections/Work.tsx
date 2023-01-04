@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import styled from "styled-components";
 import workData from "../../config/workData";
 import colors, { GREEN } from "../../styles/colors";
@@ -225,7 +225,7 @@ const Work = () => {
         animate();
     }, []);
   
-    const focusTab = () => {
+    const focusTab = useCallback(() => {
       if (tabs.current[tabFocus]) {
         tabs.current[tabFocus].focus();
         return;
@@ -238,10 +238,12 @@ const Work = () => {
       if (tabFocus < 0) {
         setTabFocus(tabs.current.length - 1);
       }
-    };
+    }, [tabFocus]);
   
     // Only re-run the effect if tabFocus changes
-    useEffect(() => focusTab(), [tabFocus]);
+    useEffect(() => {
+        focusTab()
+    }, [tabFocus, focusTab]);
   
     // Focus on tabs when using up & down arrow keys
     // const onKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {

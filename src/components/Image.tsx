@@ -5,6 +5,7 @@ interface ImageProps {
     height: number,
     width: number,
     src: string,
+    alt: string,
     circular?: boolean,
     padding?: number | {
         top?: number,
