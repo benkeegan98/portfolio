@@ -1,7 +1,7 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 import styled from "styled-components";
-import { BLUE } from "../styles/colors";
+import { BLUE, BLUE_DARK_20, BLUE_DARK_60, BLUE_LIGHT_80 } from "../styles/colors";
 
 interface ProgressBarProps {
     value: number;
@@ -10,8 +10,9 @@ interface ProgressBarProps {
 
 const ProgressBarContainer = styled.div`
   width: 100%;
-  height: 20px;
-  border: 1px solid white;
+  height: 15px;
+  margin-top: 3px;
+  background-color: ${BLUE_DARK_60};
   border-radius: 10px;
   position: relative;
 `;
@@ -22,7 +23,7 @@ const ProgressBarInner = styled.div<ProgressBarProps>`
     position: absolute;
     top: 0;
     left: 0;
-    background-color: ${props => props.color || BLUE};
+    background-color: ${props => props.color || BLUE_DARK_60};
     border-radius: 10px;
     overflow: hidden;
 
@@ -40,7 +41,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ value, color })  => {
   return (
     
       <ProgressBarContainer>
-        <CSSTransition in={true} timeout={500} classNames="fade" unmountOnExit>
+        <CSSTransition in={true} timeout={3000} classNames="fade" unmountOnExit>
             <ProgressBarInner value={value} color={color} />
         </CSSTransition>
     </ProgressBarContainer>

@@ -1,3 +1,15 @@
+import { ExternalLinkType, ProjectDataType } from "./otherProjectsData";
+
+export interface FeaturedProjectCoverImageType {
+    url: string;
+    height: number;
+    width: number;
+}
+
+export interface FeaturedProjectDataType extends ProjectDataType {
+    coverImage: FeaturedProjectCoverImageType,
+}
+
 const featuredProjectsData = [
     {
         title: "Pathbreaker Web",
@@ -28,7 +40,7 @@ const featuredProjectsData = [
         title: "Pathbreaker Mobile",
         description: "iOS and Android mobile platform for building and sharing your travels. Map your journeys as an interactive path, showing where you went, what you did there, and how you navigated between places. Build your passport to contextualize your travels, showing important factors that influence how you move. Share your travels, and see highlights of your friends' favorite trips.",
         coverImage: {
-            url: "/pb-web-cover2.png",
+            url: "/pb-mobile-cover.png",
             height: 340,
             width: 550,
         },

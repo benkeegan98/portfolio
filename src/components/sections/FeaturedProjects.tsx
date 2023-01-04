@@ -8,7 +8,7 @@ import Image from '../Image';
 
 const StyledProjectsSection = styled.section`
     max-width: 900px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0px auto;
     padding: 100px 0px;
 
@@ -406,8 +406,8 @@ const FeaturedProjects = () => {
   
     return (
       <StyledProjectsSection id="projects">
-        {/* <h2> ref={revealTitle}> */}
-        <h2>
+        {/* <h2> */}
+        <h2 ref={revealTitle}>
           Some Projects I’ve Built
         </h2>
   

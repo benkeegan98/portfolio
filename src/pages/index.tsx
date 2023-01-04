@@ -10,6 +10,7 @@ import About from '../components/sections/About';
 import Skills from '../components/sections/Skills';
 import Work from '../components/sections/Work';
 import FeaturedProjects from '../components/sections/FeaturedProjects';
+import OtherProjects from '../components/sections/OtherProjects';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -46,6 +47,7 @@ export default function Home() {
           <Skills />
           <Work />
           <FeaturedProjects />
+          <OtherProjects />
         </StyledMainContainer>
       </main>
     </>

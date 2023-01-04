@@ -1,12 +1,12 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaGooglePlay } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGooglePlay, FaRegFolder } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { GrAppleAppStore } from "react-icons/gr";
 import styled, { css } from "styled-components";
 import Container from "./Container";
 
-export type IconName = "email" | "github" | "linkedin" | "appstore" | "playstore" | "external"; 
+export type IconName = "email" | "github" | "linkedin" | "appstore" | "playstore" | "external" | "folder"; 
 
 export interface IconProps {
     name: IconName;
@@ -25,6 +25,7 @@ const iconMap = {
     appstore: GrAppleAppStore,
     playstore: FaGooglePlay,
     external: FiExternalLink,
+    folder: FaRegFolder,
 };
 
 const StyledIconContainer = styled.div<IconContainerProps>`
