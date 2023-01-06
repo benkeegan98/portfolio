@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Text from "../Text";
-import Container from "../Container";
+import Text from "../atoms/Text";
+import Container from "../atoms/Container";
 import { BLUE, WHITE } from "../../styles/colors";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
@@ -69,7 +69,6 @@ const StyledLandingSection = styled.section`
 `
 
 const Landing = () => {
-    // const one = <Text color={BLUE} size={150} paddingY={10}>Ben Keegan</Text>;
     const one = <h1>Ben Keegan</h1>;
     const two = <h2>Software Engineer</h2>;
     const three = (
@@ -78,15 +77,6 @@ const Landing = () => {
             building, and deploying applications for web and mobile
         </h3>
     );
-
-    // const three = (
-    //     <Container paddingX={10} paddingY={30} maxWidth="600px">
-    //         <Text>
-    //             Full stack developer with over 2 years experience designing, 
-    //             building, and deploying applications for web and mobile
-    //         </Text>
-    //     </Container>
-    // );
 
     const items = [one, two, three];
 

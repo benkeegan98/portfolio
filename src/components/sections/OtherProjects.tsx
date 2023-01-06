@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import otherProjectsData, { ExternalLinkType, ProjectDataType } from '../../config/otherProjectsData';
 import { BLUE, BLUE_DARK_40, BLUE_DARK_60, BLUE_LIGHT_20, WHITE } from '../../styles/colors';
 import { srConfig } from '../../utils/scrollReveal';
-import Icon from '../Icon';
+import Icon from '../atoms/Icon';
 
 const StyledProjectsSection = styled.section`
     display: flex;
@@ -260,7 +260,6 @@ const OtherProjects = () => {
   
     const [showMore, setShowMore] = useState<boolean>(false);
     const revealTitle = useRef(null);
-    // const revealArchiveLink = useRef(null);
     const revealProjects: React.MutableRefObject<HTMLLIElement[]> = useRef([]);
 
     useEffect(() => {

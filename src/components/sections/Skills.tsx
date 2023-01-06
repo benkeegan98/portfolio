@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import Container from '../Container';
-import Text from '../Text';
+import Container from '../atoms/Container';
+import Text from '../atoms/Text';
 import { srConfig } from '../../utils/scrollReveal';
 import { BLUE, GREEN } from '../../styles/colors';
-import ProgressBar from '../ProgressBar';
+import ProgressBar from '../atoms/ProgressBar';
 import skillData from '../../config/skillData';
 
 const StyledSkillsSection = styled.section`

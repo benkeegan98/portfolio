@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import featuredProjectsData from '../../config/featuredProjectsData';
 import { BLUE, BLUE_DARK_20, BLUE_DARK_60, BLUE_DARK_80, BLUE_LIGHT_40, WHITE } from '../../styles/colors';
 import { srConfig } from '../../utils/scrollReveal';
-import Icon, { IconName } from '../Icon';
+import Icon, { IconName } from '../atoms/Icon';
 // import Image from '../Image';
 import Image from 'next/image';
 
@@ -118,22 +118,11 @@ const StyledProject = styled.li`
         }
         .project-image {
             grid-column: 1 / 8;
-            /* height: 340px;
-            width: 550px;
-            object-fit: cover; */
 
             @media (max-width: 768px) {
                 grid-column: 1 / -1;
             }
 
-                /* img {
-                    @media (max-width: 768px) {
-                        height: 150px;
-                        width: 220px;
-                    }
-                    
-                    
-                } */
         }
     }
 
@@ -180,11 +169,6 @@ const StyledProject = styled.li`
                 color: ${BLUE};
             }
         }
-    
-
-        /* &:hover {
-            color: ${BLUE};
-        } */
 
         @media (min-width: 768px) {
             margin: 0 0 20px;
@@ -392,8 +376,6 @@ const StyledProject = styled.li`
         object-fit: cover;
         width: 100%;
         height: 100%;
-        /* height: 150px !important;
-        width: 220px !important; */
         filter: grayscale(100%) contrast(1) brightness(50%);
       }
     }

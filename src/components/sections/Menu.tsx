@@ -3,12 +3,12 @@ import { Helmet } from 'react-helmet';
 import Link from 'next/link';
 import styled from 'styled-components';
 // import { navLinks } from '@config';
-import navOptions, { NavOption } from '../config/navOptions';
-import { BLUE, BLUE_DARK_40, BLUE_DARK_80, NAVY, NAVY_2, NAVY_3, WHITE } from '../styles/colors';
-import { KEY_CODES } from '../utils/keyCodes';
-import useOnClickOutside from '../hooks/useOnClickOutside';
+import navOptions, { NavOption } from '../../config/navOptions';
+import { BLUE, BLUE_DARK_40, BLUE_DARK_80, NAVY, NAVY_2, NAVY_3, WHITE } from '../../styles/colors';
+import { KEY_CODES } from '../../utils/keyCodes';
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Button from './Button';
+import Button from '../atoms/Button';
 
 interface StyledHamburgerButtonProps {
     onClick: React.MouseEventHandler<HTMLButtonElement>;

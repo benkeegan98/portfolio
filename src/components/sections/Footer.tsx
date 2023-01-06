@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import Icon, { IconName } from '../Icon';
+import Icon, { IconName } from '../atoms/Icon';
 import socials from '../../config/socials';
 import { NAVY_2, WHITE, BLUE } from '../../styles/colors';
 

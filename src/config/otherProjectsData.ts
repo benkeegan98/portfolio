@@ -1,4 +1,4 @@
-import { IconName } from "../components/Icon"
+import { IconName } from "../components/atoms/Icon"
 
 export interface ExternalLinkType {
     type: IconName,

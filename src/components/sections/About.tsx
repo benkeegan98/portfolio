@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import styled from "styled-components";
-import Container from "../Container";
-import Image from "../Image";
-import Text from "../Text";
+import Container from "../atoms/Container";
+import Image from "../atoms/Image";
+import Text from "../atoms/Text";
 import { srConfig } from "../../utils/scrollReveal";
 import { BLUE, BLUE_LIGHT_20, BLUE_LIGHT_80 } from "../../styles/colors";
 

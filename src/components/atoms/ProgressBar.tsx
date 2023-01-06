@@ -1,7 +1,7 @@
 import React from "react";
 import { CSSTransition } from "react-transition-group";
 import styled from "styled-components";
-import { BLUE, BLUE_DARK_20, BLUE_DARK_60, BLUE_LIGHT_80 } from "../styles/colors";
+import { BLUE, BLUE_DARK_20, BLUE_DARK_60, BLUE_LIGHT_80 } from "../../styles/colors";
 
 interface ProgressBarProps {
     value: number;

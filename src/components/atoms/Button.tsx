@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { BLUE, BLUE_LIGHT_20, WHITE} from "../styles/colors";
+import { BLUE, BLUE_LIGHT_20, WHITE} from "../../styles/colors";
 
 interface ButtonProps {
     variant: "primary" | "secondary",

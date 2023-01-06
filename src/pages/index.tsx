@@ -1,19 +1,7 @@
+import { useEffect } from 'react';
 import Head from 'next/head'
-import { useRouter } from 'next/router';
-import { Inter } from '@next/font/google'
-import { Container, Text, Icon, Image, FadeInContainer, Side, Social } from '../components'
-import { BLUE } from '../styles/colors';
-import Nav from '../components/Nav';
 import styled from 'styled-components';
-import Landing from '../components/sections/Landing';
-import About from '../components/sections/About';
-import Skills from '../components/sections/Skills';
-import Work from '../components/sections/Work';
-import FeaturedProjects from '../components/sections/FeaturedProjects';
-import OtherProjects from '../components/sections/OtherProjects';
-import Footer from '../components/sections/Footer';
-
-const inter = Inter({ subsets: ['latin'] })
+import { Social, Landing, About, Skills, Work, FeaturedProjects, OtherProjects, Footer, Nav } from '../components'
 
 const StyledMainContainer = styled.main`
   padding: 200px 150px 0 150px;
@@ -30,6 +18,10 @@ const StyledMainContainer = styled.main`
 `
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [])
 
   return (
     <>

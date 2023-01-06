@@ -245,27 +245,6 @@ const Work = () => {
         focusTab()
     }, [tabFocus, focusTab]);
   
-    // Focus on tabs when using up & down arrow keys
-    // const onKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
-    //   switch (e.key) {
-    //     case KEY_CODES.ARROW_UP: {
-    //       e.preventDefault();
-    //       setTabFocus(tabFocus - 1);
-    //       break;
-    //     }
-  
-    //     case KEY_CODES.ARROW_DOWN: {
-    //       e.preventDefault();
-    //       setTabFocus(tabFocus + 1);
-    //       break;
-    //     }
-  
-    //     default: {
-    //       break;
-    //     }
-    //   }
-    // };
-  
     return (
       <StyledWorkSection id="work" ref={revealContainer}>
         <h2 className="numbered-heading">Work Experience</h2>

@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { GREY_80, WHITE } from "../styles/colors";
+import { GREY_80, WHITE } from "../../styles/colors";
 
 interface ContainerProps {
     backgroundColor?: "transparent" | string,

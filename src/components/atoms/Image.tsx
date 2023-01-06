@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { GREEN } from "../styles/colors";
+import { GREEN } from "../../styles/colors";
 
 interface ImageProps {
     height: number,

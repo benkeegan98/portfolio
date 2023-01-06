@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Side from './Side';
-import socials from '../config/socials';
-import Icon, { IconName } from './Icon';
+import socials from '../../config/socials';
+import Icon, { IconName } from '../atoms/Icon';
 
 const StyledSocialList = styled.ul`
   display: flex;

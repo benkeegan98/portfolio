@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import styled, { css } from "styled-components";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import Text from "./Text";
-import navOptions from "../config/navOptions";
+import Text from "../atoms/Text";
+import navOptions from "../../config/navOptions";
 import Link from "next/link";
-import Button from "./Button";
-import { BLUE, NAVY_3, WHITE } from "../styles/colors";
-import Container from "./Container";
-import Icon from "./Icon";
+import Button from "../atoms/Button";
+import { BLUE, NAVY_3, WHITE } from "../../styles/colors";
 import Menu from "./Menu";
-import useScrollDirection from "../hooks/useScrollDirection";
+import useScrollDirection from "../../hooks/useScrollDirection";
 
 interface StyledHeaderProps {
     scrollDirection: "down" | "up";
@@ -34,11 +32,9 @@ const StyledHeader = styled.header<StyledHeaderProps>`
 
     @media (max-width: 1080px) {
         padding: 0 40px;
-        /* max-width: 100vw; */
     }
     @media (max-width: 768px) {
         padding: 0 25px;
-        /* max-width: 100vw; */
     }
 
     ${props => props.scrollDirection === 'up' && !props.scrolledToTop &&
